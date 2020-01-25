@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Trivia Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- BootStrap Link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- My CSS file -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    
+    
+</head>
+      <body>
+
+        <div>
+            
+          
+                <main role="main" class="inner cover">
+                        <h1 class="cover-heading">Totally Trivial Trivia!</h1>
+                        <p class="lead btn btn-lg btn-primary" id="game-start">Start</p>
+                        <div>
+                            <p id="countdown">Time Remaining:<span id="timer"></span></p>
+                        </div>
+                </main>
+                
+                
+                <div class="trivia-ques">
+                    <p class="quest">1.  True or false?</p>
+                    <form class="question">
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="correct"> True
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> False
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> I don't know
+                        </label>
+                    </form>
+
+                    <p class="quest">2. Why?</p>
+                    <form class="question">
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="correct"> No reason 
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> I can't explain  
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> Why not? 
+                        </label>
+                    </form>
+
+                    <p class="quest">3. Who are you?</p>
+                    <form class="question">
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> I don't know  
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="correct"> I don't want to tell you  
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> You wouldn't understand
+                        </label>
+                    </form>
+
+                    <p class="quest">4. Life is?</p>
+                    <form class="question">
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> Good 
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> Short  
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="correct"> Suffering 
+                        </label>
+                    </form>
+
+                    <p class="quest">5. Death is?</p>
+                    <form class="question">
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> Not the end  
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="correct"> Inevitable  
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> I prefer not to say  
+                        </label>
+                    </form>
+
+                    <p class="quest">6. Can you know other people?</p>
+                    <form class="question">
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="correct"> Maybe  
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> No
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> Yes
+                        </label>
+                    </form>
+
+                    <p class="quest">7. Computers are?</p>
+                    <form class="question">
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="correct"> Suffering  
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> Tools
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> Bad
+                        </label>
+                    </form>
+
+                    <p class="quest">8. Who won season 23 of the Bachelor?</p>
+                    <form class="question">
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> Hannah     
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="correct"> Cassie     
+                        </label>
+                        <label class="form-check form-check-inline text-mysize">
+                          <input type="radio" name="optradio" class="optradio" value="wrong"> Tayshia    
+                        </label>
+                    </form>
+                
+                    
+                    <div>
+                        <p class="lead btn btn-lg btn-primary" id="game-done">Done
+                        </p>
+                    </div>
+                </div>
+
+               
+                    <div class="results">
+                        <p class="lead2" id="summary">All Done!</p> 
+                        <p class="lead2" id="correctScore">Correct Answers:</p>
+                        <p class="lead2" id="wrongScore"></p>
+                        <p class="lead2" id="unanswered"></p>
+                    </div>
+                
+        </div> 
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="assets/javascript/app.js"></script>
+
+      </body>
+</html>
